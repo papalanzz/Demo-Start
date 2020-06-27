@@ -15,6 +15,7 @@ import {debounceTime} from 'rxjs/operators';
 //   }
 //   return null; // return null if the formControl is valid
 // }
+// here
 
 // lets us pass in params to create validator
 function ratingRange(min: number, max: number): ValidatorFn {
@@ -121,7 +122,7 @@ export class CustomerComponent implements OnInit {
       value => {
         this.setPhoneMessage(phoneControl);
       }
-      
+
     );
 
     const ratingControl = this.customerForm.get('rating');
